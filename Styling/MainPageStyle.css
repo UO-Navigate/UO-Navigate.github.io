@@ -1,43 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   margin: 0;
 }
-
 header {
   background-color: #111a36;
   padding: 15px 40px;
   display: flex;
   align-items: center;
 }
-
-img {
+header img {
   height: 75px;
   margin-right: 15px;
 }
-
-svg {
-  height: 55px;
-  margin-right: 15px;
-}
-
 h1 {
   color: white;
   font-size: 30px;
   margin: 0;
 }
-
 .tagline {
   color: #5ee0d0;
   font-size: 13px;
   letter-spacing: 2px;
   margin: 5px 0 0 0;
 }
-
 nav {
   margin-left: auto;
 }
-
 nav a {
   color: white;
   margin-left: 25px;
+}
+.hero {
+  background: linear-gradient(135deg, #1b2a52, #2f6f86);
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h2 {
+  color: white;
+  font-size: 36px;
+  margin: 0 0 30px 0;
+}
+.features-button {
+  display: inline-block;
+  background-color: white;
+  color: #111a36;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 32px;
+}
+.features-button:hover {
+  background-color: #5ee0d0;
+}
+.discover {
+  display: flex;
+  align-items: center;
+  padding: 50px 60px;
+}
+.discover-text {
+  max-width: 600px;
+  margin-right: 40px;
+}
+.discover h2 {
+  color: #111a36;
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+.description {
+  border: 2px solid #111a36;
+  padding: 20px;
+}
+.description h3 {
+  color: #111a36;
+  margin: 0 0 10px 0;
+}
+.description p {
+  line-height: 1.5;
+  margin: 0;
+}
+.buttons {
+  margin-top: 25px;
+}
+.buttons a {
+  display: inline-block;
+  border: 2px solid #111a36;
+  border-radius: 30px;
+  color: #111a36;
+  text-decoration: none;
+  padding: 10px 22px;
+  margin-right: 12px;
+}
+.buttons a:hover {
+  background-color: #111a36;
+  color: white;
+}
+.phone {
+  height: 420px;
+  margin-left: auto;
 }
