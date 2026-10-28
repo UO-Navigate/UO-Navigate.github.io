@@ -31,7 +31,7 @@ nav a {
   margin-left: 25px;
 }
 .hero {
-  background: linear-gradient(135deg, #1b2a52, #2f6f86);
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
   text-align: center;
   padding: 120px 20px;
 }
