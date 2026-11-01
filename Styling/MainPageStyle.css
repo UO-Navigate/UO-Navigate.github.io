@@ -48,8 +48,6 @@ nav a {
   text-decoration: none;
   padding: 12px 32px;
 }
-.features-button:hover {
-  background-color: #5ee0d0;
 }
 .discover {
   display: flex;
@@ -88,10 +86,6 @@ nav a {
   text-decoration: none;
   padding: 10px 22px;
   margin-right: 12px;
-}
-.buttons a:hover {
-  background-color: #111a36;
-  color: white;
 }
 .phone {
   height: 420px;
