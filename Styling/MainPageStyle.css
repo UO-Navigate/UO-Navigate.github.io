@@ -23,7 +23,7 @@ h1 {
   letter-spacing: 2px;
   margin: 5px 0 0 0;
 }
-nav {
+nav { 
   margin-left: auto;
 }
 nav a {
@@ -31,7 +31,7 @@ nav a {
   margin-left: 25px;
 }
 .hero {
-  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("2.png") center 35% / cover;
   text-align: center;
   padding: 120px 20px;
 }
@@ -47,6 +47,9 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   padding: 12px 32px;
+}
+.features-button:hover {
+  background-color: #5ee0d0;
 }
 .discover {
   display: flex;
@@ -85,6 +88,10 @@ nav a {
   text-decoration: none;
   padding: 10px 22px;
   margin-right: 12px;
+}
+.buttons a:hover {
+  background-color: #111a36;
+  color: white;
 }
 .phone {
   height: 420px;
