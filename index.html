@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Uo Navigate</title>
-  <link rel="stylesheet" href="Styling/MainPageStyle.css">
+  <link rel="stylesheet" href="MainPageStyle.css">
   <link rel="icon" href="logo.png">
 </head>
 <body>
   <header>
-    <a href="index.html">
-      <img src="logo.png">
-    </a>
+    <img src="logo.png" alt="UO Navigate logo">
     <div>
       <h1>Uo Navigate</h1>
       <p class="tagline">CAMPUS IN 3D</p>
     </div>
     <nav>
+      <a href="index.html">Home</a>
       <a href="FeaturesPage.html">Features</a>
       <a href="PricingPage.html">Pricing</a>
       <a href="AboutTheTeamPage.html">About the Team</a>
       <a href="MailingListPage.html">Mailing List</a>
     </nav>
   </header>
-<main>
+
+  <main>
     <section class="hero">
       <h2>Find your way across campus.</h2>
       <a class="features-button" href="FeaturesPage.html">FEATURES</a>
     </section>
+
     <section class="discover">
       <div class="discover-text">
         <h2>Discover your campus.</h2>
@@ -42,8 +45,64 @@
           <a href="AboutTheTeamPage.html">About the team</a>
         </div>
       </div>
-      <img class="phone" src="phone.png" alt="UoNavigate app shown on a phone screen">  
+      <img class="phone" src="phone.png" alt="UoNavigate app shown on a phone screen">
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is UO Navigate?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>UO Navigate is an interactive 3D map of the uOttawa campus that helps students and staff quickly find essential facilities like libraries, printers, AEDs, study spaces, and cafeterias.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What can I find on the map?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Libraries, printers, AEDs, study spaces, cafeterias, and more. Check the <a href="FeaturesPage.html">Features page</a> for the full list.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Why a 3D map instead of a regular 2D one?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Campus buildings are large and multi-level. A 3D view makes it easier to recognize buildings and understand where things are, so you spend less time searching and more time getting where you need to go.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much does it cost?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can find all the details on our <a href="PricingPage.html">Pricing page</a>.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I stay updated on new features?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Join our <a href="MailingListPage.html">mailing list</a> to hear about launches and updates, or meet the people behind the project on the <a href="AboutTheTeamPage.html">About the Team page</a>.</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <script src="faq.js"></script>
 </body>
-</html>  
+</html>
