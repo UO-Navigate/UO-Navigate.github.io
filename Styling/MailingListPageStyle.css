@@ -1,7 +1,8 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f4f8fc;
+  color: #111a36;
+  background-color: #f5f7fa;
 }
 
 header {
@@ -9,11 +10,8 @@ header {
   padding: 15px 40px;
   display: flex;
   align-items: center;
-}
-
-header img {
-  height: 75px;
-  margin-right: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 header h1 {
@@ -22,108 +20,110 @@ header h1 {
   margin: 0;
 }
 
-.tagline {
-  color: #5ee0d0;
-  font-size: 13px;
-  letter-spacing: 2px;
-  margin: 5px 0 0 0;
-}
-
 nav {
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 nav a {
   color: white;
-  margin-left: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #5ee0d0;
+}
+
+main {
+  padding: 60px 20px;
 }
 
 #mailing-list {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.introduction h2 {
-  color: #111a36;
-  font-size: 36px;
-  margin-bottom: 25px;
-}
-
-.introduction p {
-  font-size: 18px;
-  line-height: 1.5;
-  max-width: 750px;
-  margin: 0 auto 60px auto;
-}
-
-.signup-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.campus-picture {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border: 3px solid #111a36;
-  border-radius: 40%;
-}
-
-.form-fields {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 300px;
-}
-
-.form-fields label {
-  color: #111a36;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.form-fields input {
-  padding: 12px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
   border: 2px solid #111a36;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
-.signup-form button {
+#mailing-list h1 {
+  margin: 0 0 15px;
+  font-size: 32px;
+}
+
+#mailing-list p {
+  margin: 0 0 30px;
+  line-height: 1.5;
+}
+
+#mailing-list h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+#mailing-list form br {
+  display: none;
+}
+
+#mailing-list label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#mailing-list input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #111a36;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#mailing-list input:focus {
+  outline: 2px solid #5ee0d0;
+  outline-offset: 2px;
+}
+
+#mailing-list button {
+  padding: 12px 32px;
+  border: 2px solid #111a36;
+  border-radius: 30px;
   background-color: #111a36;
   color: white;
-  font-size: 24px;
+  font: inherit;
   font-weight: bold;
-  padding: 25px 45px;
-  border: none;
   cursor: pointer;
 }
 
-.signup-form button:hover {
+#mailing-list button:hover {
   background-color: #5ee0d0;
   color: #111a36;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   header {
-    flex-wrap: wrap;
+    padding: 20px;
   }
 
   nav {
-    margin-top: 15px;
+    margin-left: 0;
+    gap: 15px;
   }
 
-  .signup-form {
-    flex-direction: column;
+  main {
+    padding: 30px 15px;
   }
 
-  .form-fields {
-    width: 100%;
-    max-width: 350px;
+  #mailing-list {
+    padding: 25px;
+  }
+
+  #mailing-list h1 {
+    font-size: 27px;
   }
 }
