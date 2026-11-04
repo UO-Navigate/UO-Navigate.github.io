@@ -23,7 +23,7 @@ h1 {
   letter-spacing: 2px;
   margin: 5px 0 0 0;
 }
-nav {
+nav { 
   margin-left: auto;
 }
 nav a {
@@ -31,7 +31,7 @@ nav a {
   margin-left: 25px;
 }
 .hero {
-  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("2.png") center 35% / cover;
   text-align: center;
   padding: 120px 20px;
 }
@@ -96,4 +96,60 @@ nav a {
 .phone {
   height: 420px;
   margin-left: auto;
+}
+.faq {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111a36;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.faq-question:hover {
+  opacity: 0.75;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); 
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding-bottom: 18px;
+  margin: 0;
+  line-height: 1.6;
 }
