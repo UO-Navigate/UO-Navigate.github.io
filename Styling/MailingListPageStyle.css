@@ -1,1 +1,129 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f4f8fc;
+}
 
+header {
+  background-color: #111a36;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 75px;
+  margin-right: 15px;
+}
+
+header h1 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+.tagline {
+  color: #5ee0d0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 5px 0 0 0;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+}
+
+#mailing-list {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.introduction h2 {
+  color: #111a36;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+}
+
+.signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.campus-picture {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #111a36;
+  border-radius: 40%;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+}
+
+.form-fields label {
+  color: #111a36;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-fields input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #111a36;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  background-color: #111a36;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 25px 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #5ee0d0;
+  color: #111a36;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .form-fields {
+    width: 100%;
+    max-width: 350px;
+  }
+}
