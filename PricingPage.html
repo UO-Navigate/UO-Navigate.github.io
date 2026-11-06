@@ -29,151 +29,119 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Choose your plan</h2>
+    <section class="pricing" aria-labelledby="pricing-heading">
+      <div class="hero">
+        <p class="eyebrow">MADE FOR THE UOTTAWA COMMUNITY</p>
+        <h2 id="pricing-heading">Choose your plan</h2>
 
-      <p>
-        Discover campus with confidence.
-        Pick the plan that suits your student life.
-      </p>
+        <p class="intro">
+          Discover campus with confidence.
+          Pick the plan that suits your student life.
+        </p>
 
-      <div class="billing" role="group" aria-label="Billing period">
-        <button id="monthly" class="selected"
-                type="button" aria-pressed="true">
-          Monthly
-        </button>
+        <div class="billing">
+          <div class="billing-buttons" role="group" aria-label="Billing period">
+            <button id="monthly" class="selected"
+                    type="button" aria-pressed="true">
+              Monthly
+            </button>
+            <button id="yearly" type="button" aria-pressed="false">
+              Yearly
+            </button>
+          </div>
 
-        <button id="yearly" type="button" aria-pressed="false">
-          Yearly
-        </button>
+          <p class="saving">Save up to 20% with yearly billing!</p>
+        </div>
       </div>
 
-      <p class="saving">Save 20% with yearly billing!</p>
-    </section>
+      <div class="plans">
+        <article class="plan">
+          <h3>Campus Free</h3>
 
-    <section class="plans" aria-label="Pricing plans">
-      <article class="plan">
-        <h2>Campus Free</h2>
+          <p class="description">
+            The essentials to find your way around campus.
+          </p>
 
-        <p class="plan-description">
-          The essentials to find your way around campus.
-        </p>
+          <p class="price">
+            <strong class="amount" data-month="0" data-year="0">$0</strong>
+            <span>/ month</span>
+          </p>
 
-        <p class="price">
-          <strong class="amount" data-monthly="0" data-yearly="0">$0</strong>
-          CAD / month
-        </p>
+          <p class="billing-note">Free forever</p>
 
-        <p class="billing-note">Free forever</p>
+          <ul>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Campus map and building search</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Basic walking directions</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Find libraries and study areas</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Essential campus information</li>
+          </ul>
 
-        <ul>
-          <li>Campus map and building search</li>
-          <li>Basic walking directions</li>
-          <li>Find libraries and study areas</li>
-          <li>Essential campus information</li>
-        </ul>
+          <a class="plan-button free-button" href="FeaturesPage.html">
+            Get Started
+          </a>
+        </article>
 
-        <a class="plan-button" href="FeaturesPage.html">
-          Explore Free Features
-        </a>
-      </article>
+        <article class="plan featured">
+          <p class="popular">Most Popular</p>
+          <h3>Campus Plus</h3>
 
-      <article class="plan featured">
-        <p class="popular">FEATURED PLAN</p>
+          <p class="description">
+            Extra tools to make each campus day easier.
+          </p>
 
-        <h2>Campus Plus</h2>
+          <p class="price">
+            <strong class="amount" data-month="2.99" data-year="2.39">$2.99</strong>
+            <span>/ month</span>
+          </p>
 
-        <p class="plan-description">
-          Extra tools to make each campus day easier.
-        </p>
+          <p class="billing-note">Billed monthly</p>
 
-        <p class="price">
-          <strong class="amount"
-                  data-monthly="2.99" data-yearly="2.39">$2.99</strong>
-          CAD / month
-        </p>
+          <ul>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Everything in Campus Free</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Personalized route suggestions</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Save favourite locations</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Class-to-class navigation</li>
+          </ul>
 
-        <p class="billing-note">Billed monthly</p>
+          <a class="plan-button" href="MailingListPage.html">
+            Choose Plan
+          </a>
+        </article>
 
-        <ul>
-          <li>Everything in Campus Free</li>
-          <li>Personalized route suggestions</li>
-          <li>Save favourite locations</li>
-          <li>Class-to-class navigation</li>
-        </ul>
+        <article class="plan">
+          <h3>Campus Crew</h3>
 
-        <a class="plan-button" href="MailingListPage.html">
-          Get Plus Updates
-        </a>
-      </article>
+          <p class="description">
+            Get around together and enjoy premium perks.
+          </p>
 
-      <article class="plan">
-        <h2>Campus Crew</h2>
+          <p class="price">
+            <strong class="amount" data-month="6.99" data-year="5.59">$6.99</strong>
+            <span>/ month</span>
+          </p>
 
-        <p class="plan-description">
-          Get around together and enjoy premium perks.
-        </p>
+          <p class="billing-note">Billed monthly</p>
 
-        <p class="price">
-          <strong class="amount"
-                  data-monthly="6.99" data-yearly="5.59">$6.99</strong>
-          CAD / month
-        </p>
+          <ul>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Everything in Campus Plus</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Shared group routes</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Meet-up location sharing</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Priority feature requests</li>
+          </ul>
 
-        <p class="billing-note">Billed monthly</p>
-
-        <ul>
-          <li>Everything in Campus Plus</li>
-          <li>Shared group routes</li>
-          <li>Meet-up location sharing</li>
-          <li>Priority feature requests</li>
-        </ul>
-
-        <a class="plan-button" href="MailingListPage.html">
-          Get Crew Updates
-        </a>
-      </article>
+          <a class="plan-button" href="MailingListPage.html">
+            Choose Plan
+          </a>
+        </article>
+      </div>
     </section>
 
     <section class="bottom">
-      <div class="faq">
-        <h2>Common Questions</h2>
-
-        <details>
-          <summary>What is included in Campus Free?</summary>
-          <p>
-            You can search campus buildings, get basic walking
-            directions, and find libraries and study areas.
-          </p>
-        </details>
-
-        <details>
-          <summary>How does yearly billing work?</summary>
-          <p>
-            The yearly option shows a reduced monthly equivalent.
-            Campus Plus costs $28.68 CAD per year, and Campus Crew
-            costs $67.08 CAD per year.
-          </p>
-        </details>
-
-        <details>
-          <summary>Where can I find plan updates?</summary>
-          <p>
-            Join our mailing list to hear about our plans
-            and new features.
-          </p>
-        </details>
-      </div>
-
       <div class="join">
-        <h2>Ready to explore campus?</h2>
+        <p>Stay informed about Uo Navigate and discover what is coming next.</p>
 
-        <p>
-          Stay informed about Uo Navigate and discover
-          what is coming next.
-        </p>
-
-        <a class="mailing-button" href="MailingListPage.html">
+        <a class="mailing-button"
+           href="https://uo-navigate.github.io/MailingListPage.html">
           Join the Mailing List
         </a>
       </div>
@@ -181,10 +149,9 @@
   </main>
 
   <footer>
-    <p>Uo Navigate &middot; CAMPUS IN 3D</p>
+    <p>Uo Navigate &middot; University class project</p>
   </footer>
 
-  <!-- This script makes the monthly/yearly buttons work. -->
   <script>
     const monthlyButton = document.getElementById("monthly");
     const yearlyButton = document.getElementById("yearly");
@@ -198,21 +165,23 @@
 
       document.querySelectorAll(".plan").forEach(function (plan) {
         const amount = plan.querySelector(".amount");
+        let price = Number(amount.dataset.month);
 
-        const price = Number(
-          yearly ? amount.dataset.yearly : amount.dataset.monthly
-        );
+        if (yearly) {
+          price = Number(amount.dataset.year);
+        }
 
-        amount.textContent = price === 0
-          ? "$0"
-          : "$" + price.toFixed(2);
+        amount.textContent = "$" + price.toFixed(2);
+        let note = "Billed monthly";
 
-        plan.querySelector(".billing-note").textContent =
-          price === 0
-            ? "Free forever"
-            : yearly
-              ? "$" + (price * 12).toFixed(2) + " CAD billed yearly"
-              : "Billed monthly";
+        if (price === 0) {
+          amount.textContent = "$0";
+          note = "Free forever";
+        } else if (yearly) {
+          note = "$" + (price * 12).toFixed(2) + " CAD billed yearly";
+        }
+
+        plan.querySelector(".billing-note").textContent = note;
       });
     }
 
