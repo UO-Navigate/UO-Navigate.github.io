@@ -32,6 +32,7 @@
     <section class="pricing" aria-labelledby="pricing-heading">
       <div class="hero">
         <p class="eyebrow">MADE FOR THE UOTTAWA COMMUNITY</p>
+
         <h2 id="pricing-heading">Choose your plan</h2>
 
         <p class="intro">
@@ -45,12 +46,15 @@
                     type="button" aria-pressed="true">
               Monthly
             </button>
+
             <button id="yearly" type="button" aria-pressed="false">
               Yearly
             </button>
           </div>
 
-          <p class="saving">Save up to 20% with yearly billing!</p>
+          <p class="saving">
+            Save up to 20% with yearly billing!
+          </p>
         </div>
       </div>
 
@@ -83,6 +87,7 @@
 
         <article class="plan featured">
           <p class="popular">Most Popular</p>
+
           <h3>Campus Plus</h3>
 
           <p class="description">
@@ -138,7 +143,9 @@
 
     <section class="bottom">
       <div class="join">
-        <p>Stay informed about Uo Navigate and discover what is coming next.</p>
+        <p>
+          Stay informed about Uo Navigate and discover what is coming next.
+        </p>
 
         <a class="mailing-button"
            href="https://uo-navigate.github.io/MailingListPage.html">
@@ -148,50 +155,6 @@
     </section>
   </main>
 
-  <footer>
-    <p>Uo Navigate &middot; University class project</p>
-  </footer>
-
-  <script>
-    const monthlyButton = document.getElementById("monthly");
-    const yearlyButton = document.getElementById("yearly");
-
-    function setBilling(yearly) {
-      monthlyButton.classList.toggle("selected", !yearly);
-      yearlyButton.classList.toggle("selected", yearly);
-
-      monthlyButton.setAttribute("aria-pressed", String(!yearly));
-      yearlyButton.setAttribute("aria-pressed", String(yearly));
-
-      document.querySelectorAll(".plan").forEach(function (plan) {
-        const amount = plan.querySelector(".amount");
-        let price = Number(amount.dataset.month);
-
-        if (yearly) {
-          price = Number(amount.dataset.year);
-        }
-
-        amount.textContent = "$" + price.toFixed(2);
-        let note = "Billed monthly";
-
-        if (price === 0) {
-          amount.textContent = "$0";
-          note = "Free forever";
-        } else if (yearly) {
-          note = "$" + (price * 12).toFixed(2) + " CAD billed yearly";
-        }
-
-        plan.querySelector(".billing-note").textContent = note;
-      });
-    }
-
-    monthlyButton.addEventListener("click", function () {
-      setBilling(false);
-    });
-
-    yearlyButton.addEventListener("click", function () {
-      setBilling(true);
-    });
-  </script>
+  <script src="PricingPage.js"></script>
 </body>
 </html>
