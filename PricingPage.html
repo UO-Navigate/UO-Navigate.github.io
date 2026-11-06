@@ -1,70 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - UoNavigate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Uo Navigate</title>
+  <link rel="stylesheet" href="Styling/PricingPage.css">
+  <link rel="icon" href="logo.png">
 </head>
 
 <body>
+  <header>
+    <a href="index.html">
+      <img src="logo.png" alt="UO Navigate logo">
+    </a>
 
-    <header>
-        <h1>UoNavigate</h1>
+    <div>
+      <h1>Uo Navigate</h1>
+      <p class="tagline">CAMPUS IN 3D</p>
+    </div>
 
-        <nav>
-            <a href="MainPage.html">Home</a>
-            <a href="FeaturesPage.html">Features</a>
-            <a href="PricingPage.html">Pricing</a>
-            <a href="AboutTheTeamPage.html">About the Team</a>
-            <a href="MailingListPage.html">Mailing List</a>
-        </nav>
-    </header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="FeaturesPage.html">Features</a>
+      <a href="PricingPage.html" aria-current="page">Pricing</a>
+      <a href="AboutTheTeamPage.html">About the Team</a>
+      <a href="MailingListPage.html">Mailing List</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="pricing">
+  <main>
+    <section class="hero">
+      <h2>Choose your plan</h2>
 
-            <h1>Find the Right Plan for You</h1>
+      <p>
+        Discover campus with confidence.
+        Pick the plan that suits your student life.
+      </p>
 
-            <p>
-                Explore campus with UoNavigate.
-                Choose the plan that fits your student life.
-            </p>
+      <div class="billing" role="group" aria-label="Billing period">
+        <button id="monthly" class="selected"
+                type="button" aria-pressed="true">
+          Monthly
+        </button>
 
-            <h2>Free Plan</h2>
+        <button id="yearly" type="button" aria-pressed="false">
+          Yearly
+        </button>
+      </div>
 
-            <p><strong>$0 CAD per month</strong></p>
+      <p class="saving">Save 20% with yearly billing!</p>
+    </section>
 
-            <ul>
-                <li>Access to the campus map</li>
-                <li>Search for buildings and classrooms</li>
-                <li>Find libraries and student services</li>
-                <li>Get basic campus directions</li>
-            </ul>
+    <section class="plans" aria-label="Pricing plans">
+      <article class="plan">
+        <h2>Campus Free</h2>
 
-            <h2>Premium Plan</h2>
+        <p class="plan-description">
+          The essentials to find your way around campus.
+        </p>
 
-            <p><strong>$4.99 CAD per month</strong></p>
+        <p class="price">
+          <strong class="amount" data-monthly="0" data-yearly="0">$0</strong>
+          CAD / month
+        </p>
 
-            <ul>
-                <li>Everything included in the Free Plan</li>
-                <li>Save your favourite campus locations</li>
-                <li>Plan routes between your classes</li>
-                <li>Receive campus event notifications</li>
-                <li>Enjoy an ad-free experience</li>
-            </ul>
+        <p class="billing-note">Free forever</p>
 
-            <h2>Stay Informed</h2>
+        <ul>
+          <li>Campus map and building search</li>
+          <li>Basic walking directions</li>
+          <li>Find libraries and study areas</li>
+          <li>Essential campus information</li>
+        </ul>
 
-            <p>
-                Join our mailing list to receive updates
-                about our plans and new features.
-            </p>
+        <a class="plan-button" href="FeaturesPage.html">
+          Explore Free Features
+        </a>
+      </article>
 
-            <a href="MailingListPage.html">Join Our Mailing List</a>
+      <article class="plan featured">
+        <p class="popular">FEATURED PLAN</p>
 
-        </section>
-    </main>
+        <h2>Campus Plus</h2>
 
+        <p class="plan-description">
+          Extra tools to make each campus day easier.
+        </p>
+
+        <p class="price">
+          <strong class="amount"
+                  data-monthly="2.99" data-yearly="2.39">$2.99</strong>
+          CAD / month
+        </p>
+
+        <p class="billing-note">Billed monthly</p>
+
+        <ul>
+          <li>Everything in Campus Free</li>
+          <li>Personalized route suggestions</li>
+          <li>Save favourite locations</li>
+          <li>Class-to-class navigation</li>
+        </ul>
+
+        <a class="plan-button" href="MailingListPage.html">
+          Get Plus Updates
+        </a>
+      </article>
+
+      <article class="plan">
+        <h2>Campus Crew</h2>
+
+        <p class="plan-description">
+          Get around together and enjoy premium perks.
+        </p>
+
+        <p class="price">
+          <strong class="amount"
+                  data-monthly="6.99" data-yearly="5.59">$6.99</strong>
+          CAD / month
+        </p>
+
+        <p class="billing-note">Billed monthly</p>
+
+        <ul>
+          <li>Everything in Campus Plus</li>
+          <li>Shared group routes</li>
+          <li>Meet-up location sharing</li>
+          <li>Priority feature requests</li>
+        </ul>
+
+        <a class="plan-button" href="MailingListPage.html">
+          Get Crew Updates
+        </a>
+      </article>
+    </section>
+
+    <section class="bottom">
+      <div class="faq">
+        <h2>Common Questions</h2>
+
+        <details>
+          <summary>What is included in Campus Free?</summary>
+          <p>
+            You can search campus buildings, get basic walking
+            directions, and find libraries and study areas.
+          </p>
+        </details>
+
+        <details>
+          <summary>How does yearly billing work?</summary>
+          <p>
+            The yearly option shows a reduced monthly equivalent.
+            Campus Plus costs $28.68 CAD per year, and Campus Crew
+            costs $67.08 CAD per year.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where can I find plan updates?</summary>
+          <p>
+            Join our mailing list to hear about our plans
+            and new features.
+          </p>
+        </details>
+      </div>
+
+      <div class="join">
+        <h2>Ready to explore campus?</h2>
+
+        <p>
+          Stay informed about Uo Navigate and discover
+          what is coming next.
+        </p>
+
+        <a class="mailing-button" href="MailingListPage.html">
+          Join the Mailing List
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Uo Navigate &middot; CAMPUS IN 3D</p>
+  </footer>
+
+  <!-- This script makes the monthly/yearly buttons work. -->
+  <script>
+    const monthlyButton = document.getElementById("monthly");
+    const yearlyButton = document.getElementById("yearly");
+
+    function setBilling(yearly) {
+      monthlyButton.classList.toggle("selected", !yearly);
+      yearlyButton.classList.toggle("selected", yearly);
+
+      monthlyButton.setAttribute("aria-pressed", String(!yearly));
+      yearlyButton.setAttribute("aria-pressed", String(yearly));
+
+      document.querySelectorAll(".plan").forEach(function (plan) {
+        const amount = plan.querySelector(".amount");
+
+        const price = Number(
+          yearly ? amount.dataset.yearly : amount.dataset.monthly
+        );
+
+        amount.textContent = price === 0
+          ? "$0"
+          : "$" + price.toFixed(2);
+
+        plan.querySelector(".billing-note").textContent =
+          price === 0
+            ? "Free forever"
+            : yearly
+              ? "$" + (price * 12).toFixed(2) + " CAD billed yearly"
+              : "Billed monthly";
+      });
+    }
+
+    monthlyButton.addEventListener("click", function () {
+      setBilling(false);
+    });
+
+    yearlyButton.addEventListener("click", function () {
+      setBilling(true);
+    });
+  </script>
 </body>
 </html>
