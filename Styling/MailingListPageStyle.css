@@ -52,11 +52,16 @@ main {
 #mailing-list h1 {
   margin: 0 0 15px;
   font-size: 32px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
 }
 
 #mailing-list p {
   margin: 0 0 30px;
   line-height: 1.5;
+  text-align: center;
 }
 
 #mailing-list h2 {
