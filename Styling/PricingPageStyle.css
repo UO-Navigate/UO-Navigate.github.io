@@ -1,51 +1,65 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   color: #222b3b;
   background-color: #f7f8fb;
 }
+
 header {
   background-color: #111a36;
   padding: 15px 40px;
   display: flex;
   align-items: center;
 }
+
 header img {
   height: 75px;
   margin-right: 15px;
 }
+
 h1 {
   color: white;
   font-size: 30px;
   margin: 0;
 }
+
 .tagline {
   color: #5ee0d0;
   font-size: 13px;
   letter-spacing: 2px;
   margin: 5px 0 0;
 }
+
 nav {
   margin-left: auto;
 }
+
 nav a {
   color: white;
   margin-left: 25px;
 }
+
 nav a:hover,
 nav a[aria-current="page"] {
   color: #5ee0d0;
 }
+
 .pricing {
-  background: linear-gradient(rgba(247, 248, 251, 0.35), rgba(247, 248, 251, 0.35)), url("https://www.uottawa.ca/about-us/sites/g/files/bhrskd336/files/styles/max_width_l_1470px/public/2021-12/Screen%20Shot%202021-12-07%20at%205.13.02%20PM.png?itok=rWDNIdV_") center 39% / cover;
+  background: linear-gradient(
+    rgba(247, 248, 251, 0.35),
+    rgba(247, 248, 251, 0.35)
+  ), url("https://www.uottawa.ca/about-us/sites/g/files/bhrskd336/files/styles/max_width_l_1470px/public/2021-12/Screen%20Shot%202021-12-07%20at%205.13.02%20PM.png?itok=rWDNIdV_") center 39% / cover;
   padding: 55px 24px 70px;
 }
+
 .hero {
   text-align: center;
 }
+
 .eyebrow {
   color: #8f1738;
   font-size: 12px;
@@ -53,16 +67,19 @@ nav a[aria-current="page"] {
   letter-spacing: 2px;
   margin: 0;
 }
+
 .hero h2 {
   font-size: 60px;
   letter-spacing: -2px;
   margin: 25px 0;
 }
+
 .intro {
   color: #647084;
   line-height: 1.5;
   margin: 0 0 30px;
 }
+
 .billing {
   display: flex;
   align-items: center;
@@ -70,12 +87,14 @@ nav a[aria-current="page"] {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .billing-buttons {
   display: flex;
   background-color: #e9ecf1;
   border-radius: 30px;
   padding: 5px;
 }
+
 .billing button {
   background: none;
   border: none;
@@ -87,10 +106,233 @@ nav a[aria-current="page"] {
   font-weight: bold;
   cursor: pointer;
 }
+
 .billing button.selected {
   background-color: #8f1738;
   color: white;
 }
+
 .saving {
   color: #8f1738;
   font-size: 14px;
+  font-weight: bold;
+}
+
+.plans {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 70px auto 0;
+}
+
+.plan {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dfe4eb;
+  border-radius: 22px;
+  padding: 35px 30px 30px;
+}
+
+.plan h3 {
+  font-size: 23px;
+  margin: 0 0 14px;
+}
+
+.description {
+  min-height: 48px;
+  color: #647084;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.price {
+  margin: 35px 0 15px;
+}
+
+.price strong {
+  font-size: 48px;
+  letter-spacing: -2px;
+}
+
+.price span {
+  color: #647084;
+  font-size: 14px;
+}
+
+.billing-note {
+  min-height: 20px;
+  color: #647084;
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 25px;
+}
+
+.plan li {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.check {
+  color: #18765d;
+  font-weight: bold;
+}
+
+.featured {
+  border: 2px solid #8f1738;
+}
+
+.popular {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #8f1738;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 18px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.plan-button {
+  display: block;
+  background-color: #8f1738;
+  color: white;
+  border: 2px solid #8f1738;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.plan-button:hover {
+  background-color: #64102b;
+}
+
+.free-button {
+  background-color: white;
+  color: #8f1738;
+}
+
+.free-button:hover {
+  background-color: #fbe5ed;
+}
+
+.bottom {
+  background-color: #f7f8fb;
+  color: #222b3b;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.join {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bottom p {
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.mailing-button {
+  display: inline-block;
+  background-color: #8f1738;
+  color: white;
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.mailing-button:hover {
+  background-color: #64102b;
+}
+
+footer {
+  background-color: #64102b;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #e6a336;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .plans {
+    flex-direction: column;
+    max-width: 420px;
+    gap: 35px;
+    margin-top: 45px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .bottom {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  header img {
+    height: 55px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .pricing {
+    padding: 40px 20px;
+  }
+
+  .plan {
+    padding: 30px 22px;
+  }
+}
