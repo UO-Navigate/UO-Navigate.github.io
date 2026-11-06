@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  color: #111a36;
+  color: #222b3b;
+  background-color: #f7f8fb;
 }
 header {
   background-color: #111a36;
@@ -35,61 +39,58 @@ nav a:hover,
 nav a[aria-current="page"] {
   color: #5ee0d0;
 }
+.pricing {
+  background: linear-gradient(rgba(247, 248, 251, 0.35), rgba(247, 248, 251, 0.35)), url("https://www.uottawa.ca/about-us/sites/g/files/bhrskd336/files/styles/max_width_l_1470px/public/2021-12/Screen%20Shot%202021-12-07%20at%205.13.02%20PM.png?itok=rWDNIdV_") center 39% / cover;
+  padding: 55px 24px 70px;
+}
 .hero {
-  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
   text-align: center;
-  padding: 70px 20px;
-  color: white;
+}
+.eyebrow {
+  color: #8f1738;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
 }
 .hero h2 {
-  font-size: 36px;
-  margin: 0 0 20px;
+  font-size: 60px;
+  letter-spacing: -2px;
+  margin: 25px 0;
 }
-.hero p {
+.intro {
+  color: #647084;
   line-height: 1.5;
+  margin: 0 0 30px;
 }
 .billing {
-  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.billing-buttons {
+  display: flex;
+  background-color: #e9ecf1;
+  border-radius: 30px;
+  padding: 5px;
 }
 .billing button {
-  background-color: white;
-  color: #111a36;
-  border: 2px solid white;
-  padding: 10px 25px;
+  background: none;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 25px;
+  color: #647084;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
 }
-.billing button.selected,
-.billing button:hover {
-  background-color: #5ee0d0;
-  border-color: #5ee0d0;
+.billing button.selected {
+  background-color: #8f1738;
+  color: white;
 }
 .saving {
-  color: #5ee0d0;
-  font-weight: bold;
-}
-.plans {
-  display: flex;
-  gap: 25px;
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 60px 30px;
-}
-.plan {
-  flex: 1;
-  min-width: 0;
-  border: 2px solid #111a36;
-  padding: 25px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.plan h2 {
-  font-size: 28px;
-  margin: 0 0 15px;
-}
-.plan p {
-  line-height: 1.5;
-  margin: 0 0 15px;
-}
+  color: #8f1738;
+  font-size: 14px;
