@@ -1,39 +1,63 @@
-const monthlyButton = document.getElementById("monthly");
-const yearlyButton = document.getElementById("yearly");
 
-function setBilling(yearly) {
-  monthlyButton.classList.toggle("selected", !yearly);
-  yearlyButton.classList.toggle("selected", yearly);
+const form = document.getElementById("signup-form");
+const message = document.getElementById("form-message");
 
-  monthlyButton.setAttribute("aria-pressed", String(!yearly));
-  yearlyButton.setAttribute("aria-pressed", String(yearly));
+const firstNameInput = document.getElementById("first-name");
+const lastNameInput = document.getElementById("last-name");
+const emailInput = document.getElementById("email");
 
-  document.querySelectorAll(".plan").forEach(function (plan) {
-    const amount = plan.querySelector(".amount");
-    let price = Number(amount.dataset.month);
+// Check if a field is valid
+function validateField(input) {
+    const value = input.value.trim();
+    let valid = value !== "";
 
-    if (yearly) {
-      price = Number(amount.dataset.year);
+    if (input.type === "email") {
+        valid = valid && input.validity.valid;
     }
 
-    amount.textContent = "$" + price.toFixed(2);
-    let note = "Billed monthly";
-
-    if (price === 0) {
-      amount.textContent = "$0";
-      note = "Free forever";
-    } else if (yearly) {
-      note = "$" + (price * 12).toFixed(2) + " CAD billed yearly";
+    if (valid) {
+        input.style.border = "1px solid #111a36";
+    } else {
+        input.style.border = "2px solid red";
     }
 
-    plan.querySelector(".billing-note").textContent = note;
-  });
+    return valid;
 }
 
-monthlyButton.addEventListener("click", function () {
-  setBilling(false);
+// Validate fields while typing
+firstNameInput.addEventListener("input", function() {
+    validateField(firstNameInput);
 });
 
-yearlyButton.addEventListener("click", function () {
-  setBilling(true);
+lastNameInput.addEventListener("input", function() {
+    validateField(lastNameInput);
+});
+
+emailInput.addEventListener("input", function() {
+    validateField(emailInput);
+});
+
+// Validate the form when submitted
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const firstNameValid = validateField(firstNameInput);
+    const lastNameValid = validateField(lastNameInput);
+    const emailValid = validateField(emailInput);
+
+    if (!firstNameValid || !lastNameValid || !emailValid) {
+        message.textContent = "Please fill in all fields correctly.";
+        message.style.color = "red";
+    } else {
+        const firstName = firstNameInput.value.trim();
+
+        message.textContent = "Thank you, " + firstName + "! Your information has been submitted successfully.";
+        message.style.color = "green";
+
+        form.reset();
+
+        firstNameInput.style.border = "1px solid #111a36";
+        lastNameInput.style.border = "1px solid #111a36";
+        emailInput.style.border = "1px solid #111a36";
+    }
 });
