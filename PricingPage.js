@@ -6,7 +6,6 @@ const firstNameInput = document.getElementById("first-name");
 const lastNameInput = document.getElementById("last-name");
 const emailInput = document.getElementById("email");
 
-// Check if a field is valid
 function validateField(input) {
     const value = input.value.trim();
     let valid = value !== "";
@@ -24,7 +23,7 @@ function validateField(input) {
     return valid;
 }
 
-// Validate fields while typing
+
 firstNameInput.addEventListener("input", function() {
     validateField(firstNameInput);
 });
@@ -37,7 +36,6 @@ emailInput.addEventListener("input", function() {
     validateField(emailInput);
 });
 
-// Validate the form when submitted
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
