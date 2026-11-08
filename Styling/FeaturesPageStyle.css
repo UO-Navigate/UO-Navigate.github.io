@@ -23,10 +23,10 @@ body {
 .logo::before {
   content: "";
   display: inline-block;
-  width: 83.5333px;
-  height: 75px;
+  width: 98.5333px;
+  height: 78.6667px;
   background-image: url('../logo.png');
-  background-size: contain;
+  background-size: 83.5333px 75px;
   background-repeat: no-repeat;
   background-position: left center;
 }
