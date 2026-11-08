@@ -1,0 +1,29 @@
+UO NAVIGATE - STYLE GUIDELINES (Team 14)
+
+COLOR THEME
+- Navy (#111a36): header bar, headings, button text and borders.
+- Teal (#5ee0d0): accent color, used for the tagline and highlights.
+- White (#ffffff) and light grey-blue (#f7f8fb): page backgrounds.
+- Dark grey (#222b3b): main body text.
+- Grey-blue (#647084): secondary text such as descriptions and notes.
+- Green (#18765d) for success and check marks, red for form errors.
+- White text is used on navy backgrounds and on photos with a dark overlay.
+
+TYPOGRAPHY
+- Font: Arial (sans-serif) for text, with Georgia for the Mailing List heading.
+- Site name: 30px, bold, white, in the header.
+- Tagline "CAMPUS IN 3D": 13px, teal, uppercase, spaced out letters.
+- Main headings: 32-36px, bold. Sub-headings: 18-24px, bold.
+- Body text: 16px with extra line spacing so it is easy to read.
+- Small notes: 12-14px in the secondary grey-blue.
+
+LOGO, MENU, BUTTONS AND MORE
+- The logo (teal tile with a red map pin) is at the left of the navy header,
+  next to the site name.
+- The menu is on the right, in white: Home, Features, Pricing, About the Team,
+  Mailing List.
+- Buttons are either solid or pill-shaped outlines with rounded corners and
+  a 2px navy border.
+- Pages use simple sections (header, hero or intro, content) with generous
+  spacing between them.
+- On phones, columns stack into one column and the menu wraps under the logo.
