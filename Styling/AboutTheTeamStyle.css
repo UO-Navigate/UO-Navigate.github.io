@@ -36,6 +36,13 @@ nav {
 nav a {
     color: white;
     margin-left: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #5ee0d0;
+}
+
 }
 
 .team-section {
