@@ -36,6 +36,12 @@ nav {
 nav a {
     color: white;
     margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #5ee0d0;
 }
 
 .team-section {
@@ -45,25 +51,29 @@ nav a {
 
 .section-heading {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .section-heading h2 {
     color: #111a36;
     font-size: 32px;
     margin: 0 0 12px 0;
+    line-height: 1.2;
 }
 
 .section-heading p {
     color: #555;
     font-size: 16px;
     margin: 0;
+    line-height: 1.5;
 }
 
 .team-container {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 25px;
+    column-gap: 25px;
+    row-gap: 35px;
+    align-items: stretch;
 }
 
 .team-card:nth-child(1),
@@ -85,6 +95,8 @@ nav a {
     background-color: white;
     border: 2px solid #111a36;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -97,6 +109,7 @@ nav a {
     display: block;
     position: relative;
     height: 260px;
+    flex-shrink: 0;
     overflow: hidden;
     background-color: #f2f2f2;
 }
@@ -134,11 +147,13 @@ nav a {
 
 .team-info {
     padding: 20px;
+    text-align: center;
 }
 
 .team-info h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     font-size: 19px;
+    line-height: 1.3;
     color: #111a36;
 }
 
@@ -146,76 +161,5 @@ nav a {
     margin: 0;
     color: #555;
     font-size: 14px;
-}
-
-@media (max-width: 900px) {
-
-    header {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    nav {
-        margin-left: 0;
-    }
-
-    nav a {
-        margin-left: 15px;
-    }
-
-    .team-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .team-card:nth-child(n) {
-        grid-column: auto;
-    }
-
-    .team-card:nth-child(5) {
-        grid-column: 1 / -1;
-        width: calc(50% - 12.5px);
-        justify-self: center;
-    }
-}
-
-@media (max-width: 600px) {
-
-    header {
-        padding: 15px 20px;
-    }
-
-    header img {
-        height: 60px;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    nav a {
-        margin-left: 0;
-    }
-
-    .team-section {
-        padding: 40px 6%;
-    }
-
-    .team-container {
-        grid-template-columns: 1fr;
-    }
-
-    .team-card:nth-child(n) {
-        grid-column: 1;
-        width: 100%;
-    }
-
-    .team-image {
-        height: 280px;
-    }
-
-    .section-heading h2 {
-        font-size: 28px;
-    }
+    line-height: 1.5;
 }
