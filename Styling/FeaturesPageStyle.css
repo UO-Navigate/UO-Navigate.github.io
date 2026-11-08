@@ -24,7 +24,7 @@ body {
   display: inline-block;
   width: 98.5333px;
   height: 78.6667px;
-  background-image: url('logo.png');
+  background-image: url('../logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
@@ -76,7 +76,7 @@ font-size: 16px;
 }
 
 .popular-section {
-  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("campus.png") center 35% / cover;
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
   padding: 55px 20px; 
   text-align: center;
   box-sizing: border-box;
