@@ -23,8 +23,8 @@ body {
 .logo::before {
   content: "";
   display: inline-block;
-  width: 98.5333px;
-  height: 78.6667px;
+  width: 83.5333px;
+  height: 75px;
   background-image: url('../logo.png');
   background-size: contain;
   background-repeat: no-repeat;
