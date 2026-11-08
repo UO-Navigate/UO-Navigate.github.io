@@ -1,0 +1,160 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #111a36;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; 
+  width: 100%;
+  height: 108.667px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo::before {
+  content: "";
+  display: inline-block;
+  width: 98.5333px;
+  height: 78.6667px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0; 
+  padding: 0;
+}
+
+.logo-text h1 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.logo-text .tagline {
+  color: #5ee0d0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.nav-links li {
+  margin-left: 29.45px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: underline;
+font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #5ee0d0;
+}
+
+.popular-section {
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("campus.png") center 35% / cover;
+  padding: 55px 20px; 
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.popular-section h2 {
+  color: white; 
+  font-size: 32px;
+  margin-bottom: 19px;
+  margin-top: 0;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background-color: white;
+  border: 2px solid #111a36;
+  border-radius: 8px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.location-card p {
+  color: #111a36;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.location-card:hover {
+  background-color: #5ee0d0;
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #111a36;
+  border-radius: 30px;
+  padding: 5px 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  color: #111a36;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.search-section {
+  display: none; 
+  padding: 40px 20px;
+  text-align: center;
+}
