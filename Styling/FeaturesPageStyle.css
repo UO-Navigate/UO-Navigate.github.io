@@ -20,8 +20,7 @@ body {
   margin-right: auto;
 }
 
-.logo::before {
-  content: "";
+.logo-image {
   display: inline-block;
   width: 98.5333px;
   height: 78.6667px;
