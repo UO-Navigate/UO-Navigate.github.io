@@ -36,7 +36,7 @@ nav {
 nav a {
     color: white;
     margin-left: 25px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 16px;
 }
 
