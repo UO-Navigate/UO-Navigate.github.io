@@ -66,55 +66,105 @@ font-size: 16px;
 .nav-links a:hover {
   color: #5ee0d0;
 }
-.popular-section {
+.features-section {
+  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../FeaturesPageBackground.png") center 35% / cover;
   padding: 50px max(60px, calc((100% - 1300px) / 2));
   text-align: center;
-  box-sizing: border-box;
-  width: 100%;
 }
-.popular-section h2 {
-  color: #111a36;
+.features-section h2 {
+  color: white;
   font-size: 32px;
-  margin-bottom: 40px;
-  margin-top: 0;
+  margin: 0 0 40px 0;
 }
-.locations-grid {
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.location-card {
-  background-color: #f7f8fb;
-  border: 2px solid #111a36;
-  border-radius: 8px;
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dfe4eb;
+  border-radius: 22px;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-.location-card img {
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px #00000020;
+}
+.feature-card img {
   height: 420px;
   max-width: 100%;
   object-fit: contain;
   margin-bottom: 20px;
 }
-.location-card h3 {
+.feature-card h3 {
   color: #111a36;
   font-size: 20px;
   margin: 0 0 10px 0;
 }
-.location-card p {
+.feature-card p {
   color: #647084;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
 }
-.location-card:hover {
-  background-color: #5ee0d0;
-  transform: translateY(-5px);
+.coming-soon {
+  background-color: #111a36;
+  padding: 60px max(60px, calc((100% - 1300px) / 2));
+  text-align: center;
 }
-.location-card:hover p {
+.coming-soon h2 {
+  color: white;
+  font-size: 32px;
+  margin: 0 0 40px 0;
+}
+.coming-soon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.coming-soon-item {
+  border: 2px solid rgba(94, 224, 208, 0.4);
+  border-radius: 22px;
+  padding: 25px;
+  text-align: left;
+}
+.coming-soon-item h3 {
+  color: #5ee0d0;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+.coming-soon-item p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.cta-buttons {
+  margin-top: 40px;
+}
+.cta-buttons a {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  margin: 0 6px 10px 6px;
+}
+.cta-buttons a:first-child {
+  background-color: #5ee0d0;
+  border-color: #5ee0d0;
+  color: #111a36;
+  font-weight: bold;
+}
+.cta-buttons a:hover {
+  background-color: white;
+  border-color: white;
   color: #111a36;
 }
 @media (max-width: 900px) {
@@ -134,7 +184,12 @@ font-size: 16px;
   .nav-links li {
     margin-left: 0;
   }
-  .locations-grid {
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .coming-soon-list {
     grid-template-columns: 1fr;
     max-width: 500px;
     margin: 0 auto;
@@ -161,19 +216,19 @@ font-size: 16px;
     display: inline-block;
     padding: 6px 0;
   }
-  .popular-section {
+  .features-section,
+  .coming-soon {
     padding: 30px 20px;
   }
-  .popular-section h2 {
+  .features-section h2,
+  .coming-soon h2 {
     font-size: 26px;
   }
-  .locations-grid {
+  .features-grid,
+  .coming-soon-list {
     gap: 20px;
   }
-  .location-card img {
+  .feature-card img {
     height: 360px;
-  }
-  .location-card p {
-    font-size: 15px;
   }
 }
