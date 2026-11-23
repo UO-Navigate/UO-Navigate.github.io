@@ -115,7 +115,33 @@ main {
   color: #111a36;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  header img {
+    height: 55px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 14px;
+  }
+
   main {
     padding: 30px 15px;
   }
@@ -127,5 +153,4 @@ main {
   #mailing-list h1 {
     font-size: 27px;
   }
-
 }
