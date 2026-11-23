@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 .team-image {
-    display: none;
+    display: block;
     position: relative;
     height: 260px;
     flex-shrink: 0;
