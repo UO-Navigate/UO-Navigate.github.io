@@ -1,9 +1,9 @@
 const linkedInProfiles = {
-    member1: "",
-    member2: "",
-    member3: "",
-    member4: "",
-    member5: ""
+    member1: "https://www.linkedin.com/in/hadeed-ali-52627344b/",
+    member2: "https://www.linkedin.com/in/taha-amoum/",
+    member3: "https://www.linkedin.com/in/iman-baratov/",
+    member4: "https://www.linkedin.com/in/haytam-besri-828128443/",
+    member5: "https://www.linkedin.com/in/areej-chkir-3b837b3a8/"
 };
 
 const teamImages = document.querySelectorAll(".team-image");
