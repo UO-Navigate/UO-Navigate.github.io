@@ -30,6 +30,9 @@ nav a {
   color: white;
   margin-left: 25px;
 }
+nav a:hover {
+  color: #5ee0d0;
+}
 .hero {
   background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../campus.png") center 35% / cover;
   text-align: center;
