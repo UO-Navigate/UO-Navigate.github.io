@@ -67,77 +67,55 @@ font-size: 16px;
   color: #5ee0d0;
 }
 .popular-section {
-  background: linear-gradient(rgba(17, 26, 54, 0.55), rgba(17, 26, 54, 0.55)), url("../FeaturesPageBackground.png") center 35% / cover;
-  padding: 55px 20px; 
+  padding: 50px max(60px, calc((100% - 1300px) / 2));
   text-align: center;
   box-sizing: border-box;
   width: 100%;
 }
 .popular-section h2 {
-  color: white; 
+  color: #111a36;
   font-size: 32px;
-  margin-bottom: 19px;
+  margin-bottom: 40px;
   margin-top: 0;
 }
 .locations-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  gap: 30px;
 }
 .location-card {
-  background-color: white;
+  background-color: #f7f8fb;
   border: 2px solid #111a36;
   border-radius: 8px;
-  height: 80px;
+  padding: 30px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.location-card p {
+.location-card img {
+  height: 420px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.location-card h3 {
   color: #111a36;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.location-card p {
+  color: #647084;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
 }
 .location-card:hover {
   background-color: #5ee0d0;
   transform: translateY(-5px);
 }
-form {
-  display: flex;
-  justify-content: center;
-  margin: 20px 20px 20px 20px;
-}
-.search {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border: 2px solid #111a36;
-  border-radius: 30px;
-  padding: 5px 20px;
-  width: 100%;
-  max-width: 600px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.search-icon {
+.location-card:hover p {
   color: #111a36;
-  font-size: 24px;
-  margin-right: 10px;
-}
-.search-input {
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 16px;
-  padding: 10px 0;
-}
-.search-section {
-  display: none;
-  padding: 40px 20px;
-  text-align: center;
 }
 @media (max-width: 900px) {
   .navbar {
@@ -157,7 +135,9 @@ form {
     margin-left: 0;
   }
   .locations-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 600px) {
@@ -182,22 +162,18 @@ form {
     padding: 6px 0;
   }
   .popular-section {
-    padding: 35px 15px;
+    padding: 30px 20px;
   }
   .popular-section h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
   .locations-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 20px;
   }
-  .location-card {
-    height: 64px;
+  .location-card img {
+    height: 360px;
   }
   .location-card p {
-    font-size: 16px;
-  }
-  .search {
-    padding: 4px 14px;
+    font-size: 15px;
   }
 }
