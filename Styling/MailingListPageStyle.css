@@ -123,4 +123,8 @@ main {
   #mailing-list h1 {
     font-size: 27px;
   }
+
+  nav a:hover {
+    color: #5ee0d0;
+  }
 }
