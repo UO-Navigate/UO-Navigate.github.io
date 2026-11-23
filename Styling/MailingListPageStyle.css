@@ -34,6 +34,10 @@ nav a {
   margin-left: 25px;
 }
 
+nav a:hover {
+  color: #5ee0d0;
+}
+
 main {
   padding: 60px 20px;
 }
@@ -124,7 +128,4 @@ main {
     font-size: 27px;
   }
 
-  nav a:hover {
-    color: #5ee0d0;
-  }
 }
